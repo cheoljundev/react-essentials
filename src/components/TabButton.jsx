@@ -1,4 +1,4 @@
-export default function ({children, onSelect}) {
+export default function ({children, onSelect, isSelected}) {
     function handleClick(){
         console.log("Hello, world!");
     }
@@ -8,7 +8,7 @@ export default function ({children, onSelect}) {
 
     return (
         <li>
-            <button onClick={onSelect}>{children}</button>
+            <button className={isSelected ? "active" : undefined} onClick={onSelect}>{children}</button>
         </li>
     );
 }
