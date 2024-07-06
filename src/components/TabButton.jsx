@@ -1,11 +1,11 @@
-export default function (props) {
+export default function ({children, onSelect}) {
     function handleClick(){
         console.log("Hello, world!");
     }
 
     return (
         <li>
-            <button onClick={handleClick}>{props.children}</button>
+            <button onClick={onSelect}>{children}</button>
         </li>
     );
 }
