@@ -1,8 +1,8 @@
+import {useState, Fragment} from "react";
 import {CORE_CONCEPTS, EXAMPLES} from "./data";
 import Header from "./components/Header/Header";
 import CoreConcept from "./components/CoreConcept";
 import TabButton from "./components/TabButton";
-import {useState} from "react";
 
 function App() {
     const [selectedTopic, setSelectedTopic] = useState()
@@ -29,7 +29,7 @@ function App() {
     }
 
     return (
-        <div>
+        <Fragment>
             <Header/>
             <main>
                 <section id="core-concepts">
@@ -49,7 +49,7 @@ function App() {
                 </section>
                 {tabContent}
             </main>
-        </div>
+        </Fragment>
     );
 }
 
