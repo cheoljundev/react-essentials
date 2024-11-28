@@ -1,5 +1,5 @@
 import {CORE_CONCEPTS} from "./data";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 
 function CoreConcept({image, title, description}) {
   return (<li>
